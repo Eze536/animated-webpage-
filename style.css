@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(logo.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color: #fff;
+    background-image: linear-gradient(45deg, #df4881, #1a66d8);
+    font-size: 14px;
+    border-radius: 30px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.content {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.content h1 {
+    font-size: 70px;
+    color: #222;
+}
+
+.content p {
+    margin: 10px 0 30px;
+    color: #333;
+    animation-delay: 0.5s;
+}
+
+.content .btn {
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+
+.btn:hover {
+    border-top-right-radius: 30px;
+    
+}
+
+.feature-img {
+    width: 970px;
+    position: absolute;
+    top: 0;
+    right: 0%;
+}
+
+.feature-img.anim {
+    animation-delay: 1.5s;
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* Tablet styles */
+@media (max-width: 992px) {
+    .hero {
+        padding: 10px 6%;
+    }
+
+    nav ul li {
+        margin: 8px 10px;
+    }
+
+    .content {
+        margin-top: 8%;
+        max-width: 460px;
+    }
+
+    .content h1 {
+        font-size: 52px;
+    }
+
+    .content .btn {
+        padding: 14px 50px;
+    }
+
+    .feature-img {
+        width: 360px;
+        right: 5%;
+    }
+}
+
+
+/* Mobile phone styles */
+@media (max-width: 600px) {
+    html,
+    body {
+        height: 100dvh;
+        overflow: hidden;
+        overscroll-behavior: none;
+    }
+   
+   .hero {
+        height: 100dvh;
+        min-height: 100dvh;
+        padding: 10px 5% 0;
+        overflow: hidden;
+    }
+    nav {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 6px 0;
+    }
+
+    .logo {
+        width: 95px;
+        flex-shrink: 0;
+    }
+
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .login-btn {
+        margin-right: 0;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    nav .btn {
+        padding: 8px 14px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px;
+        width: 100%;
+        order: 3;
+        margin-top: 6px;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .content {
+        margin-top: 22px;
+        max-width: 100%;
+    }
+
+    .content h1 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
+
+    .content p {
+        font-size: 14px;
+        margin: 10px 0 20px;
+        background: rgba(255, 255, 255, 0.85);
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .content .btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px 24px;
+        font-size: 15px;
+    }
+
+    .feature-img {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 8px auto 0;
+        transform: scale(1.45) translateY(-12px);
+        transform-origin: top center;
+        
+        pointer-events: none;
+    }
+    .menu-toggle {
+        display: inline-block;
+        padding: 6px 10px;
+        font-size: 13px;
+        background: transparent;
+        border: 1px solid #333;
+        border-radius: 6px;
+        color: #333;
+        cursor: pointer;
+    }
+}
+.feature-img{
+    pointer-events: none;
+}
