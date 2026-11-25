@@ -87,10 +87,10 @@ nav ul li a {
 }
 
 .feature-img {
-    width: 970px;
+    width: 530px;
     position: absolute;
-    top: 0;
-    right: 0%;
+    top: 100px;
+    right: 10%;
 }
 
 .feature-img.anim {
@@ -148,13 +148,19 @@ nav ul li a {
         overflow: hidden;
         overscroll-behavior: none;
     }
-   
-   .hero {
+
+    .hero {
         height: 100dvh;
         min-height: 100dvh;
         padding: 10px 5% 0;
         overflow: hidden;
     }
+
+    .toggle,
+    .menu-toggle {
+        display: none;
+    }
+
     nav {
         flex-wrap: wrap;
         gap: 8px;
@@ -205,28 +211,29 @@ nav ul li a {
     }
 
     .content {
-        margin-top: 22px;
+        margin-top: 16px;
         max-width: 100%;
     }
 
     .content h1 {
-        font-size: 36px;
-        line-height: 1.15;
+        font-size: 32px;
+        line-height: 1.12;
     }
 
     .content p {
-        font-size: 14px;
-        margin: 10px 0 20px;
+        font-size: 13px;
+        line-height: 1.35;
+        margin: 8px 0 14px;
         background: rgba(255, 255, 255, 0.85);
-        padding: 8px;
+        padding: 6px 8px;
         border-radius: 8px;
     }
 
     .content .btn {
         width: 100%;
         text-align: center;
-        padding: 14px 24px;
-        font-size: 15px;
+        padding: 12px 20px;
+        font-size: 14px;
     }
 
     .feature-img {
@@ -238,20 +245,9 @@ nav ul li a {
         width: 100%;
         height: auto;
         margin: 8px auto 0;
-        transform: scale(1.45) translateY(-12px);
+        transform: scale(1.25) translateY(-8px);
         transform-origin: top center;
-        
         pointer-events: none;
-    }
-    .menu-toggle {
-        display: inline-block;
-        padding: 6px 10px;
-        font-size: 13px;
-        background: transparent;
-        border: 1px solid #333;
-        border-radius: 6px;
-        color: #333;
-        cursor: pointer;
     }
 }
 .feature-img{
